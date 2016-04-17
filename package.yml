@@ -1,0 +1,18 @@
+name        : xf86dgaproto
+version     : 2.1
+release     : 6
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/xf86dgaproto-2.1.tar.gz : 73bc6fc830cce5a0ec9c750d4702601fc0fca12d6353ede8b4c0092c9c4ca2af
+license     :
+    - MIT
+summary     : X11 Direct Graphics Access extension library
+component   : xorg.proto
+patterns    : /
+description : |
+    X11 Direct Graphics Access extension library
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
